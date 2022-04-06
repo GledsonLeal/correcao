@@ -1,0 +1,59 @@
+<h1><center>Registro de Veículos</center></h1>
+
+<img src="./layouts/registroimg.jpg">
+
+<div class="card">
+
+    <form action="/criar_registro" method="post">
+        <div class="form-group row">
+            <!--Recebe a Marca-->
+            <div class="form-group col-md-6">
+                <label for="marca">Marca</label>
+                <select id="marca" class="form-control" name="marca" required>
+                <option>Chevrolet</option>
+                <option>Volkswagen</option>
+                <option>Fiat</option>
+                <option>Renault</option>
+                <option>Ford</option>
+                <option>Toyota</option>
+                <option>Hyundai</option>
+                <option>Jeep</option>
+                <option>Honda</option>
+                <option>Nissan</option>
+                <option>Citroën</option>
+                <option>Mitsubishi</option>
+                <option>Peugeot</option>
+                <option>Chery</option>
+                <option>BMW</option>
+                <option>Mercedez-Benz</option>
+                <option>Kia</option>
+                <option>Audi</option>
+                <option>Volvo</option>
+                <option>Land Rover</option>
+                <option>Outra marca...</option>
+                </select>
+            </div>
+            <!--Recebe o Modelo-->
+            <div class="form-group col-md-6">
+                <label for="modelo">Modelo</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" required>
+            </div>
+            <!--Recebe a Placa-->
+            <div class="form-group col-md-2">
+                <label for="placa">Placa</label>
+                <input type="text" class="form-control" id="placa" name="placa" required>           
+            </div>
+            <!--Recebe a Pintura-->
+            <div class="form-group col-md-4">
+                <label for="pintura">Pintura</label>
+                <input type="text" class="form-control" id="pintura" name="pintura" required>
+            </div>
+            <!--Recebe o Proprietário-->
+            <div class="form-group col-md-6">
+                <label for="propriedario">Proprietário</label>
+                <input type="text" class="form-control" id="proprietario" name="proprietario" required><br>
+            </div>
+            <button class="btn btn-primary" type="submit">Registrar</button> 
+        </div>
+    </form>
+</div>

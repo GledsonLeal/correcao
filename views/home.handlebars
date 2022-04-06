@@ -1,0 +1,25 @@
+
+<h1><center>Registro de Veículos</center></h1>
+<a href="/registro">
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Registrar um veículo</button>
+    </div>
+</a><br>
+<h1><center>Veículos Estacionados</center></h1>
+<hr>
+    {{#each veiculos}}
+    <div class="card" style="width: 69.80rem;">   
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Marca: {{dataValues.marca}}</li>
+        <li class="list-group-item">Modelo: {{dataValues.modelo}}</li>
+        <li class="list-group-item">Placa: {{dataValues.placa}}</li>
+        <li class="list-group-item">Pintura: {{dataValues.pintura}}</li>
+        <li class="list-group-item">Proprietário: {{dataValues.proprietario}}</li>
+    </ul>
+    </div>
+    <nobr><center>
+    <a href= "/editar/{{dataValues.id}}"><button type="button" class="btn btn-secondary btn-sm">Atualizar Dados</button></a>
+    <a href= "/deletar/{{dataValues.id}}"><button type="button" class="btn btn-primary btn-sm">Remover Veículo</button></a>
+    </center></nobr><br>
+    {{/each}}
+<hr>

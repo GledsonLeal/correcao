@@ -1,0 +1,58 @@
+<h1><center>Atualizar Dados</center></h1>
+<div class="card">
+
+<!--Pretendo exibir os dados que serão alterados-->
+
+    <form action="/editar" method="post">
+        <div class="form-group row">
+            <!--Recebe a Marca-->
+            <div class="form-group col-md-6">
+                <label for="marca">Marca</label>
+                <select id="marca" name="marca" class="form-control" value="{{form.marca}}">
+                <option>Chevrolet</option>
+                <option>Volkswagen</option>
+                <option>Fiat</option>
+                <option>Renault</option>
+                <option>Ford</option>
+                <option>Toyota</option>
+                <option>Hyundai</option>
+                <option>Jeep</option>
+                <option>Honda</option>
+                <option>Nissan</option>
+                <option>Citroën</option>
+                <option>Mitsubishi</option>
+                <option>Peugeot</option>
+                <option>Chery</option>
+                <option>BMW</option>
+                <option>Mercedez-Benz</option>
+                <option>Kia</option>
+                <option>Audi</option>
+                <option>Volvo</option>
+                <option>Land Rover</option>
+                <option>Outra marca...</option>
+                </select>
+            </div>
+            <!--Recebe o Modelo-->
+            <div class="form-group col-md-6">
+                <label for="modelo">Modelo</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" placeholder="HB20..." value="{{form.modelo}}">
+            </div>
+            <!--Recebe a Placa-->
+            <div class="form-group col-md-2">
+                <label for="placa">Placa</label>
+                <input type="text" class="form-control" id="placa" placeholder="ABC-0000" name="placaa" value="{{form.placa}}">           
+            </div>
+            <!--Recebe a Pintura-->
+            <div class="form-group col-md-4">
+                <label for="pintura">Pintura</label>
+                <input type="text" class="form-control" id="pintura" placeholder="Amarelo..." name="cor" value="{{form.pintura}}">
+            </div>
+            <!--Recebe o Proprietário-->
+            <div class="form-group col-md-6">
+                <label for="propriedario">Proprietário</label>
+                <input type="text" class="form-control" id="proprietario" placeholder="Joãozinho..." name="proprietario" value="{{form.proprietario}}"><br>
+            </div>
+            <button class="btn btn-primary" type="submit">Alterar Dados</button> 
+        </div>
+    </form>
+</div>
